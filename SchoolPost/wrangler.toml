@@ -5,7 +5,7 @@ pages_build_output_dir = "./public"
 [[d1_databases]]
 binding = "DB"
 database_name = "schoolpost"
-database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+database_id = "e233c9d4-8d0c-4469-8633-850d1e1a6da6"
 migrations_dir = "migrations"
 
 # Uncomment to enable the optional Cloudflare Workers AI content check.
