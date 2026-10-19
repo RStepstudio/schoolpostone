@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#f8f8f5">
+    <meta name="description" content="A place for students to share what they're learning and building.">
+    <title>Schoolpost — good ideas belong in the open</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles.css">
+  </head>
+  <body>
+    <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <symbol id="icon-home" viewBox="0 0 24 24"><path d="m3 10 9-7 9 7v10a1 1 0 0 1-1 1h-5v-7H9v7H4a1 1 0 0 1-1-1z"/></symbol>
+      <symbol id="icon-search" viewBox="0 0 24 24"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></symbol>
+      <symbol id="icon-people" viewBox="0 0 24 24"><path d="M16 21v-2a4 4 0 0 0-4-4H7a4 4 0 0 0-4 4v2"/><circle cx="9.5" cy="7" r="4"/><path d="M20 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></symbol>
+      <symbol id="icon-code" viewBox="0 0 24 24"><path d="m8 17-5-5 5-5m8 0 5 5-5 5m-3-12-2 14"/></symbol>
+      <symbol id="icon-bookmark" viewBox="0 0 24 24"><path d="M6 4.5A1.5 1.5 0 0 1 7.5 3h9A1.5 1.5 0 0 1 18 4.5V21l-6-4-6 4z"/></symbol>
+      <symbol id="icon-user" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21a8 8 0 0 1 16 0"/></symbol>
+      <symbol id="icon-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
+      <symbol id="icon-spark" viewBox="0 0 24 24"><path d="m12 2 1.8 7.2L21 11l-7.2 1.8L12 20l-1.8-7.2L3 11l7.2-1.8z"/><path d="m19 16 .8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+      <symbol id="icon-arrow" viewBox="0 0 24 24"><path d="M7 17 17 7M7 7h10v10"/></symbol>
+      <symbol id="icon-bell" viewBox="0 0 24 24"><path d="M18 8a6 6 0 0 0-12 0c0 7-3 7-3 9h18c0-2-3-2-3-9m-8 13h4"/></symbol>
+      <symbol id="icon-heart" viewBox="0 0 24 24"><path d="M20.8 8.7c0 4.3-8.8 10.3-8.8 10.3S3.2 13 3.2 8.7A4.7 4.7 0 0 1 12 6.3a4.7 4.7 0 0 1 8.8 2.4Z"/></symbol>
+      <symbol id="icon-message" viewBox="0 0 24 24"><path d="M21 11.5a8.4 8.4 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.4 8.4 0 0 1-3.8-.9L3 21l1.9-5.7a8.4 8.4 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.4 8.4 0 0 1 3.8-.9h.5a8.5 8.5 0 0 1 8 8z"/></symbol>
+      <symbol id="icon-trash" viewBox="0 0 24 24"><path d="M3 6h18m-2 0-.9 14H5.9L5 6m4 0V4h6v2m-5 4v6m4-6v6"/></symbol>
+      <symbol id="icon-moon" viewBox="0 0 24 24"><path d="M20.9 13A9 9 0 0 1 11 3.1 9 9 0 1 0 20.9 13Z"/></symbol>
+      <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+      <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+      <symbol id="icon-branch" viewBox="0 0 24 24"><circle cx="6" cy="6" r="3"/><circle cx="18" cy="18" r="3"/><circle cx="6" cy="18" r="3"/><path d="M6 9v6m12 0a6 6 0 0 0-6-6H9"/></symbol>
+      <symbol id="icon-more" viewBox="0 0 24 24"><circle cx="5" cy="12" r="1"/><circle cx="12" cy="12" r="1"/><circle cx="19" cy="12" r="1"/></symbol>
+      <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M4 12h16m-7-7 7 7-7 7"/></symbol>
+    </svg>
+    <div class="app-shell">
+      <aside class="sidebar">
+        <a class="wordmark" href="#" aria-label="Schoolpost home">
+          <span class="wordmark-mark">s<span>.</span></span>
+          <span>schoolpost</span>
+        </a>
+        <nav class="main-nav" aria-label="Main navigation">
+          <button class="nav-item active" data-tab="home"><svg class="icon nav-icon"><use href="#icon-home"></use></svg>Home</button>
+          <button class="nav-item" data-tab="explore"><svg class="icon nav-icon"><use href="#icon-search"></use></svg>Explore</button>
+          <button class="nav-item" data-tab="following"><svg class="icon nav-icon"><use href="#icon-people"></use></svg>Following</button>
+          <button class="nav-item" data-tab="repositories"><svg class="icon nav-icon"><use href="#icon-code"></use></svg>Projects</button>
+        </nav>
+        <div class="sidebar-divider"></div>
+        <div class="nav-section-label">YOUR SPACE</div>
+        <button class="nav-item" data-tab="bookmarks"><svg class="icon nav-icon"><use href="#icon-bookmark"></use></svg>Bookmarks</button>
+        <button class="nav-item" data-tab="profile"><svg class="icon nav-icon"><use href="#icon-user"></use></svg>My profile</button>
+        <div class="sidebar-bottom">
+          <div class="upgrade-card">
+            <div class="upgrade-spark"><svg class="icon"><use href="#icon-spark"></use></svg></div>
+            <strong>Good ideas grow here.</strong>
+            <p>Share what you're learning with your school.</p>
+            <button class="invite-button" id="inviteButton">Invite a friend <svg class="icon"><use href="#icon-arrow"></use></svg></button>
+          </div>
+          <button class="profile-switcher" aria-label="Your profile">
+            <span class="avatar avatar-maya" data-current-avatar>MC</span>
+            <span class="profile-name">Maya Chen<small>@mayac</small></span>
+            <span class="more-dots"><svg class="icon"><use href="#icon-more"></use></svg></span>
+          </button>
+          <section class="verification-section" id="verificationSection" style="display: none;">
+            <div class="section-heading"><h2>Verification</h2></div>
+            <div id="verificationStatus" class="verification-status"></div>
+            <button class="verification-button" id="verificationButton" style="display: none;">Become Verified</button>
+          </section>
+        </div>
+      </aside>
+
+      <main class="feed-column">
+        <header class="mobile-header">
+          <a class="wordmark" href="#"><span class="wordmark-mark">s<span>.</span></span><span>schoolpost</span></a>
+          <span class="avatar avatar-maya" data-current-avatar>MC</span>
+        </header>
+        <div class="feed-heading">
+          <div>
+            <p class="eyebrow" id="feedEyebrow">YOUR SCHOOL, YOUR PEOPLE</p>
+            <h1 id="feedTitle">Good morning, Maya</h1>
+          </div>
+          <div class="heading-actions"><button class="icon-button theme-toggle" id="themeToggle" aria-label="Switch to dark mode"><svg class="icon"><use href="#icon-moon"></use></svg></button><button class="icon-button notification-button" aria-label="Notifications"><svg class="icon"><use href="#icon-bell"></use></svg><i></i></button></div>
+        </div>
+        <div class="feed-tabs" role="tablist" aria-label="Feed">
+          <button class="feed-tab selected" data-feed="for-you" role="tab">For you</button>
+          <button class="feed-tab" data-feed="latest" role="tab">Latest</button>
+        </div>
+
+        <section class="composer" aria-label="Create a post">
+          <span class="avatar avatar-maya" data-current-avatar>MC</span>
+          <div class="composer-main">
+            <textarea id="postInput" maxlength="500" rows="2" placeholder="What are you learning or building?"></textarea>
+            <div class="composer-footer">
+              <div class="composer-hint"><svg class="icon"><use href="#icon-spark"></use></svg> Share a thought, a question, or a little win</div>
+              <div class="composer-actions">
+                <label class="file-upload" title="Attach file"><svg class="icon"><use href="#icon-user"></use></svg><input type="file" id="postFile" accept=".txt,.json,.csv,.md,.pdf" style="display: none;"></label>
+                <span id="characterCount">0 / 500</span><button id="postButton" class="primary-button" disabled>Post <svg class="icon"><use href="#icon-arrow"></use></svg></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        <div id="feedNotice" class="feed-notice" aria-live="polite"></div>
+        <section id="feed" class="post-list" aria-label="School feed"></section>
+        <div class="end-of-feed"><svg class="icon"><use href="#icon-spark"></use></svg><p>You're all caught up.<br><small>Go make something worth sharing.</small></p></div>
+      </main>
+
+      <aside class="right-rail">
+        <label class="search-box"><svg class="icon"><use href="#icon-search"></use></svg><input id="searchInput" type="search" placeholder="Search Schoolpost"><kbd>⌘ K</kbd></label>
+        <section class="rail-card welcome-card">
+          <div class="welcome-illustration"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><svg class="icon little-star"><use href="#icon-spark"></use></svg><span class="welcome-letter">s</span></div>
+          <p class="eyebrow">A LITTLE NOTE</p>
+          <h2>Small steps<br>count, too.</h2>
+          <p class="welcome-copy">Your next big thing starts with sharing your first small thing.</p>
+          <button class="text-link" id="startPostButton">Write your first post <svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+        </section>
+        <section class="trending-section">
+          <div class="section-heading"><h2>Happening at Northstar</h2><span class="live-dot"></span></div>
+          <button class="trend-item" data-search="#sciencenight"><span class="trend-number">01</span><span><small>THIS WEEK · 28 POSTS</small><strong>#ScienceNight</strong></span><svg class="icon trend-arrow"><use href="#icon-arrow"></use></svg></button>
+          <button class="trend-item" data-search="#buildinpublic"><span class="trend-number">02</span><span><small>STUDENT PROJECTS · 16 POSTS</small><strong>#BuildInPublic</strong></span><svg class="icon trend-arrow"><use href="#icon-arrow"></use></svg></button>
+          <button class="trend-item" data-search="#seniorartshow"><span class="trend-number">03</span><span><small>ARTS · 12 POSTS</small><strong>#SeniorArtShow</strong></span><svg class="icon trend-arrow"><use href="#icon-arrow"></use></svg></button>
+          <button class="see-more" data-tab="explore">See what's happening <svg class="icon"><use href="#icon-arrow-right"></use></svg></button>
+        </section>
+        <section class="people-section">
+          <div class="section-heading"><h2>People to know</h2><button class="subtle-link" data-tab="explore">See all</button></div>
+          <div id="peopleList"></div>
+        </section>
+        <footer class="site-footer"><span>About</span><span>Community guidelines</span><span>Made for curious minds <svg class="icon"><use href="#icon-spark"></use></svg></span><small>© 2026 Schoolpost</small></footer>
+      </aside>
+    </div>
+    <div id="toast" class="toast" role="status"></div>
+    <dialog id="usernameDialog" class="username-dialog" aria-labelledby="usernameTitle">
+      <form id="usernameForm" class="username-form">
+        <div class="dialog-mark">s<span>.</span></div>
+        <p class="eyebrow">WELCOME TO YOUR SCHOOL</p>
+        <h2 id="usernameTitle">What should we call you?</h2>
+        <p class="dialog-copy">Pick a username to join the conversation. No email or real name needed.</p>
+        <label for="usernameInput">Your username</label>
+        <div class="username-field"><span>@</span><input id="usernameInput" name="username" type="text" minlength="3" maxlength="20" pattern="[A-Za-z0-9_\x2d]{3,20}" autocomplete="username" autocapitalize="none" spellcheck="false" placeholder="curiousstudent" required></div>
+        <p class="username-help">3–20 characters: letters, numbers, underscores, or hyphens.</p>
+        <p id="usernameError" class="dialog-error" aria-live="polite"></p>
+        <button class="primary-button onboarding-button" type="submit">Join Schoolpost <svg class="icon"><use href="#icon-arrow"></use></svg></button>
+      </form>
+    </dialog>
+    <script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/11.6.0/firebase-firestore.js"></script>
+<script>
+// TODO: Replace with your Firebase project config from Firebase Console > Project Settings
+const firebaseConfig = {
+  apiKey: "YOUR_API_KEY",
+  authDomain: "YOUR_PROJECT.firebaseapp.com",
+  projectId: "YOUR_PROJECT_ID",
+  storageBucket: "YOUR_PROJECT.appspot.com",
+  messagingSenderId: "YOUR_SENDER_ID",
+  appId: "YOUR_APP_ID"
+};
+let db = null;
+try {
+  if (firebaseConfig.apiKey !== "YOUR_API_KEY") {
+    const app = firebase.initializeApp(firebaseConfig);
+    db = firebase.firestore(app);
+  }
+} catch (e) {
+  console.warn("Firebase not configured:", e);
+}
+window.schoolpostDb = db;
+</script>
+<script src="./app.js" defer></script>
+  </body>
+</html>
