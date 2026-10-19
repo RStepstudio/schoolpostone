@@ -1,0 +1,13 @@
+name = "schoolpost"
+compatibility_date = "2026-10-09"
+pages_build_output_dir = "./public"
+
+[[d1_databases]]
+binding = "DB"
+database_name = "schoolpost"
+database_id = "REPLACE_WITH_YOUR_D1_DATABASE_ID"
+migrations_dir = "migrations"
+
+# Uncomment to enable the optional Cloudflare Workers AI content check.
+# [ai]
+# binding = "AI"
